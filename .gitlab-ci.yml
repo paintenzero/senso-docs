@@ -3,7 +3,7 @@ before_script:
 
 test:
   script:
-    - [ -d "docs" ]
+    - ls site
     - find site -mindepth 1 -type f 2>/dev/null | read
 
 deploy:
