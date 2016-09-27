@@ -1,7 +1,10 @@
+before_script:
+  - mkdocs build
+
 test:
   script:
-    - mkdocs build
-    - mkdocs build --clean
+    - [ -d "docs" ]
+    - find site -mindepth 1 -type f 2>/dev/null | read
 
 deploy:
   script:
