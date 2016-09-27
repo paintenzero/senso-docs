@@ -1,0 +1,5 @@
+site_name: Senso SDK Documentation
+pages:
+  - Home: index.md
+  - Protocol: net_protocol.md
+theme: readthedocs
