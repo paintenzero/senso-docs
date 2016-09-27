@@ -1,3 +1,8 @@
 test:
   script:
     - mkdocs build
+    - mkdocs build --clean
+
+deploy:
+  script:
+    - rsync -avz site/ senso.me:/var/www/html/senso/docs
