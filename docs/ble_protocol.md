@@ -22,4 +22,4 @@ For example, to store new name of the board, one need to write packet:
 0x10 <5 bytes ascii>
 ```
 
-To get firmware version, write 1 byte to the characteristic 0x20 and then read that characteristic.
+To get firmware version, write 1 byte `0x20` to the characteristic  and then read it back.
