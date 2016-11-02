@@ -1,6 +1,8 @@
 # Network protocol for communicating with Senso Devices Driver
 
-## Glove position
+## Glove pose
+
+A pose of the Senso Device. Quaternion format: `[x, y, z, w]`
 
 ```
 {
@@ -41,8 +43,22 @@
       {
         "pos": [int, int, int],
         "quat": [float, float, float, float]
-      },
+      }
     ]
+  }
+}
+```
+
+## Vibration packets
+
+```
+{
+  "dst": "Device MAC address",
+  "type": "vibration",
+  "data": {
+    "type": "thumb/index/middle/third/little",
+    "dur": <int 0-65536 in milliseconds>,
+    "str": <int 0-10>
   }
 }
 ```
