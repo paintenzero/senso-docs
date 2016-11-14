@@ -2,6 +2,31 @@
 
 Common UUID for all Senso characteristics: a8bd_XXXX_-0c74-471e-bd1c-9cec99925f02
 
+### Receiving senso glove IMU data
+
+Characteristic UUID: 0x0001  
+Full UUID: a8bd0001-0c74-471e-bd1c-9cec99925f02
+
+### Sensors mode
+
+Characteristic UUID: 0x0002  
+Full UUID: a8bd0001-0c74-471e-bd1c-9cec99925f02
+
+### Sensors datarate
+
+Characteristic UUID: 0x0003  
+Full UUID: a8bd0001-0c74-471e-bd1c-9cec99925f02
+
+### Sensors additional data
+
+Characteristic UUID: 0x0004  
+Full UUID: a8bd0001-0c74-471e-bd1c-9cec99925f02
+
+### Vibrate
+
+Characteristic UUID: 0x0101  
+Full UUID: a8bd0101-0c74-471e-bd1c-9cec99925f02
+
 ### Managing persistent settings
 
 Characteristic UUID: 0x0201  
