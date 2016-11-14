@@ -1,6 +1,7 @@
 site_name: Senso SDK Documentation
 pages:
   - Home: index.md
-  - Protocol: net_protocol.md
-  - BLE: ble_protocol.md
+  - Driver Protocol: net_protocol.md
+  - BLE Protocol: ble_protocol.md
+  - UE4 SDK: ue4.md
 theme: readthedocs
