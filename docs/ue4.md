@@ -39,7 +39,7 @@ For each branch we need to setup pointers to meshes, arrays and variables to use
 
 After pointers were set we set world rotation of the hand and wrist using pose data we received. Please note we only needed to combine rotators of hand with initial rotations in the example. If you happen to need combine rotators for a wrist you can do similar way as for hand mesh.
 
-![Set rotations for palm and wrist](u4img/bp_set_palm_and_wrist.png)
+![Set rotations for palm and wrist](ue4img/bp_set_palm_and_wrist.png)
 
 Setting fingers' pose is a little bit harder. For each finger there is a pitch and yaw rotation angles (roll is not used as usually you can't rotate your finger around that axis). That angles are stored in two arrays whose indices starts from 0 for thumb to 4 for little finger. There is a helper function for setting finger's pose using those two angles. The function is called "Set Finger Bones".
 The main idea is to apply pitch angle to first finger's bone only. At the same time the yaw angle is divided by (bones count - 1) and is applied proportionally to each finger's bone. However if the yaw angle is negative, we need to only set first finger's bone rotation.
