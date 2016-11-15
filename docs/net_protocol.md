@@ -8,8 +8,7 @@ Every JSON packet is delimited by newline sign ("\n", ASCII=10).
 
 A pose of the Senso glove.  
 
-
-Name and src stand for device's BLE name and MAC address respectively. Type field inside data dictionary is used to determine if it is a pose for right hand (rh) or left hand (lh).  
+`name` and `src` stand for device's BLE name and MAC address respectively. `type` field inside `data` dictionary is used to determine if it is a pose for right hand (rh) or left hand (lh).  
 All rotations are given in quaternions in format: `[w, x, y, z]`. Note that axis of the IMU could not coincide with axis used in your game engine so it is up to you to convert the quaternion.
 X, Y, Z on sensor corresponds to Pitch, Roll and Yaw respectively.
 
@@ -88,10 +87,10 @@ To start vibrating a client should send the following JSON packet to the server:
 }
 ```
 
-dst field is the MAC address of the device you want to start vibrating on.  
-type field inside data dictionary should specify which finger you want to start vibration. Instead of finger name there can be integer indices: from 0 for thumb to 4 for little finger.  
-dur is the duration of the vibration in milliseconds
-str is the strength of the vibration. Valid values are from 0 to 10.
+`dst` field is the MAC address of the device you want to start vibrating on.  
+`type` field inside data dictionary should specify which finger you want to start vibration. Instead of finger name there can be integer indices: from 0 for thumb to 4 for little finger.  
+`dur` is the duration of the vibration in milliseconds
+`str` is the strength of the vibration. Valid values are from 0 to 10.
 
 To stop vibrating before duration expired you want to pass packet with strength set to 0.
 
