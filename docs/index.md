@@ -30,13 +30,15 @@ There is a convenient "run.cmd" script to start all the software needed and star
 When a device was connected you need to go through calibration procedure. For your convenience Senso Data Provider shows you a position you need to hold your arm in. Calibrating takes few seconds and not too hard.
 
 ![Calibration 1](/img/driver/sdp_calibrate1.png)
-![Calibration 2](/img/driver/sdp_calibrate1.png)
+![Calibration 2](/img/driver/sdp_calibrate2.png)
 
 After calibration is done you will see axes of rotations.
 
 ![Calibration done](/img/driver/sdp_calibrate_done.png)
 
 ### Manual starting
+
+We strongly encourage you to use starting script. However if you need to change a configuration and start any piece of our software by hand you can use instructions below.
 
 #### Senso BLE Server
 
