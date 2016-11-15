@@ -25,7 +25,7 @@ There is a convenient "run.cmd" script to start all the software needed and star
 
 ## Manual starting
 
-We strongly encourage you to use starting script. However if you need to change a configuration and start any piece of our software by hand you can use instructions below.
+We strongly encourage you to use starting script. However if you need to change a configuration and start any piece of our software manually you can use instructions below.
 
 ### Senso BLE Server
 
@@ -41,15 +41,15 @@ To exit the Senso BLE Server you can right click on system tray icon and select 
 
 For every Senso Device you need to run one instance of the Senso Data Provider. For example, if you want to use pair of Senso gloves you need to run this application twice. Once started, you need to specify port of the Senso BLE Server in "BLE server configuration" section and press "Connect to server".
 
-Now you can specify if you want to connect to the left or to the right device. You need to select which port to listen client (game) connection on.
-After that select Senso device from dropdown list and click "Connect to glove". After connection has been established you can proceed to the [calibrating section](#calibrating).
+Now you can specify if you want to connect to the left or to the right device. You need to specify which port client (game) listens.
+Thet select Senso device from dropdown list and click "Connect to glove". After connection has been established you can proceed to the [calibrating section](#calibrating).
 
 #### Command line arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| /saddr=&lt;hostname&gt; | 127.0.0.1 | Host where the Senso BLE Server is run |
-| /sport=&lt;port&gt; | 9872 | port of the Senso BLE Server |
+| /saddr=&lt;hostname&gt; | 127.0.0.1 | Host where the Senso BLE Server runs |
+| /sport=&lt;port&gt; | 9872 | Port of the Senso BLE Server |
 | /caddr=&lt;ip&gt; | 0.0.0.0 | IP address to bind listening socket to |
 | /cport=&lt;port&gt; | 53450 | Port to listen for client connections |
 | /right | None | Use the device as right glove |
@@ -57,16 +57,16 @@ After that select Senso device from dropdown list and click "Connect to glove". 
 | /udpaddr=&lt;ip&gt; | None | Hostname to use for UDP synchronization connections |
 | /udpport=&lt;port&gt; | None | UDP port to use for data synchronization |
 | /reconnect | None | Auto reconnect if bluetooth connection is lost |
-| /name="aa:bb:cc:dd:ee:ff" | None | Senso device address to connect to. Advertising name can be also used. |
+| /name="aa:bb:cc:dd:ee:ff" | None | Senso device Bluetooth MAC address to connect to. Advertising name can also be used. |
 
 # Calibrating
 
-When a device was connected you need to go through calibration procedure. For your convenience Senso Data Provider shows you a position you need to hold your arm in. Calibrating takes few seconds and not too hard.
+When a device is connected you need to go through calibration procedure. For your convenience Senso Data Provider shows you a position you need to hold your arm in. Calibrating is an easy procedure and takes a few seconds.
 
 ![Calibration 1](/img/driver/sdp_calibrate1.png)
 ![Calibration 2](/img/driver/sdp_calibrate2.png)
 
-After calibration is done you will see axes of rotations.
+When calibration is done you will see axes of rotations.
 
 ![Calibration done](/img/driver/sdp_calibrate_done.png)
 
