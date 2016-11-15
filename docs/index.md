@@ -61,7 +61,7 @@ After that select Senso device from dropdown list and click "Connect to glove". 
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| /shost=&lt;hostname&gt; | 127.0.0.1 | Host where the Senso BLE Server is run |
+| /saddr=&lt;hostname&gt; | 127.0.0.1 | Host where the Senso BLE Server is run |
 | /sport=&lt;port&gt; | 9872 | port of the Senso BLE Server |
 | /caddr=&lt;ip&gt; | 0.0.0.0 | IP address to bind listening socket to |
 | /cport=&lt;port&gt; | 53450 | Port to listen for client connections |
