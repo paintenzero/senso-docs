@@ -1,6 +1,6 @@
 # Installation of a BLE adapter.
 
-Download the driver package from [Senso website](https://senso.me/downloads/driver-latest.zip).
+Download the driver package from [Senso website](https://senso.me/downloads/senso-driver.zip).
 Plug in one of the BLE adapter provided in Senso Gloves package. Once the installation of a driver is completed run zadig.exe utility. Select "Options" menu and check "List All Devices".
 
 ![Zadig list all devices](img/driver/zadig_list_all.png)
