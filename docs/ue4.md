@@ -1,6 +1,6 @@
 # Getting started
 
-You can download Senso Plugin for UE4 from [here](https://senso.me/dev/downloads/senso-plugin-ue4.zip). Once downloaded you should put it into Plugins directory inside your Project folder.  
+You can download Senso Plugin for UE4 from [here](https://senso.me/downloads/senso-plugin-ue4.zip). Once downloaded you should put it into Plugins directory inside your Project folder.  
 Restart UE4 editor with your project and go to `Settings -> Plugins`. Check if **Senso Gloves Plugin** under **Input Devices** has been enabled.  
 
 Now you need to create three new blueprints:
@@ -23,7 +23,7 @@ From now on you can use Senso Data and pose your pawn's hand. For details and ex
 
 # Sample Project
 
-Sample project can be found [here](https://senso.me/dev/downloads/senso-sample-proj-ue4.zip). It consists of two hands from Epic's VR Template that are controlled using Senso Driver.
+Sample project can be found [here](https://senso.me/downloads/senso-sample-proj-ue4.zip). It consists of two hands from Epic's VR Template that are controlled using Senso Driver.
 
 # Explanation of BP_GlovesPawn in sample project
 
