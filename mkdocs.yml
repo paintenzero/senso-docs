@@ -3,5 +3,6 @@ pages:
   - Home: index.md
   - Driver Protocol: net_protocol.md
   - BLE Protocol: ble_protocol.md
+  - Unity Plugin: unity.md
   - UE4 SDK: ue4.md
 theme: readthedocs
