@@ -102,9 +102,26 @@ Client should specify orientation of the HMD. This is a rotation to better adjus
 {
   "type": "orientation",
   "data": {
-    "rot": [float, float, float]
+    "type": "hmd",
+    "yaw": float
   }
 }
 ```
 
 Rotation is given in radians around axes pitch, roll and yaw respectively.
+
+# Gesture
+
+```
+{
+  "src": "Device MAC address",
+  "type": "gesture",
+  "data": {
+    "hand": "rh/lh",
+    "name": "name of the gesture",
+    "fingers": [0, 1]
+  }
+}
+```
+
+Valid names of the gestures: "pinch_start", "pinch_end"
