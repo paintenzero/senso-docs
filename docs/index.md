@@ -17,11 +17,11 @@ You can insert second BLE adapter from the Senso package into your PC.
 
 # Senso Device Driver
 
-Senso Device Driver consists of two parts: Senso BLE Server and Senso Data Provider.
+Senso Device Driver consists of two parts: Senso BLE Server and Senso User Interface.
 
 ## Automatic starting of all the software
 
-There is a convenient "run.cmd" script to start all the software needed and start working. Please, use the script and proceed to the [calibrating section](#calibrating).
+There is a convenient "start.bat" script to start all the software needed and start working. Please, use the script and proceed to the [calibrating section](#calibrating).
 
 ## Manual starting
 
@@ -35,11 +35,11 @@ This application should be run for every Senso BLE adapter installed on the syst
 
 To exit the Senso BLE Server you can right click on system tray icon and select "Exit".
 
-### Senso Data Provider
+### Senso User Interface
 
 ![Senso Data Provider first run](img/driver/senso_data_provider.png)
 
-For every Senso Device you need to run one instance of the Senso Data Provider. For example, if you want to use pair of Senso gloves you need to run this application twice. Once started, you need to specify port of the Senso BLE Server in "BLE server configuration" section and press "Connect to server".
+For every Senso Device you need to run one instance of the Senso UI. For example, if you want to use pair of Senso gloves you need to run this application twice. Once started, you need to specify port of the Senso BLE Server in "BLE server configuration" section and press "Connect to server".
 
 Now you can specify if you want to connect to the left or to the right device. You need to specify which port client (game) listens.
 Thet select Senso device from dropdown list and click "Connect to glove". After connection has been established you can proceed to the [calibrating section](#calibrating).
@@ -61,7 +61,7 @@ Thet select Senso device from dropdown list and click "Connect to glove". After 
 
 # Calibrating
 
-When a device is connected you need to go through calibration procedure. For your convenience Senso Data Provider shows you a position you need to hold your arm in. Calibrating is an easy procedure and takes a few seconds.
+When a device is connected you need to go through calibration procedure. For your convenience Senso UI shows you a position you need to hold your arm in. Calibrating is an easy procedure and takes a few seconds.
 
 ![Calibration 1](/img/driver/sdp_calibrate1.png)
 ![Calibration 2](/img/driver/sdp_calibrate2.png)
