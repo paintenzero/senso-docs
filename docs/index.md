@@ -31,13 +31,13 @@ We strongly encourage you to use starting script. However if you need to change 
 
 This application should be run for every Senso BLE adapter installed on the system. For example, if you want to use pair of BLE adapters it should be run twice. By default it is listening 9872 TCP port. To start two instances of this server you need to specify another port by passing /sport=&lt;port&gt; argument to the app. Once run it creates an icon in system tray.
 
-![System tray Senso icon](img/driver/system_tray.png)
+![System tray Senso icon](/img/driver/system_tray.png)
 
 To exit the Senso BLE Server you can right click on system tray icon and select "Exit".
 
 ### Senso User Interface
 
-![Senso Data Provider first run](img/driver/senso_data_provider.png)
+![Senso Data Provider first run](/img/driver/senso_data_provider.png)
 
 For every Senso Device you need to run one instance of the Senso UI. For example, if you want to use pair of Senso gloves you need to run this application twice. Once started, you need to specify port of the Senso BLE Server in "BLE server configuration" section and press "Connect to server".
 
@@ -75,5 +75,5 @@ When calibration is done you will see axes of rotations.
 ##### I have another Bluetooth USB adapter in my system and it stopped working after installing Senso BLE driver.  
 Unfortunately you cannot use CSR8510 A10 usb adapter on the same system with Senso Device. We are working hard to solve this problem. You can uninstall the driver using device manager by going to "Universal Serial Devices", right clicking CSR8510 A10 and select "Uninstall driver". Select checkbox "Delete the driver software for this device". After it is done you can unplug and plug the USB adapter back and you should be all set.
 
-![Device Manager](img/driver/device_manager.png)
-![Driver uninstall](img/driver/driver_uninstall.png)
+![Device Manager](/img/driver/device_manager.png)
+![Driver uninstall](/img/driver/driver_uninstall.png)

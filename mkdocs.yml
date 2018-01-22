@@ -5,4 +5,5 @@ pages:
   - BLE Protocol: ble_protocol.md
   - Unity Plugin: unity.md
   - UE4 SDK: ue4.md
+  - Using lighthouse: lighthouse.md
 theme: readthedocs
